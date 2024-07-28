@@ -8,18 +8,90 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body{
+    background-color: black;
+}
+
+/* Slider */
+.imgslider{
+    margin-top: 110px;
+    margin-left: -10px;
+}
+
+.container1 {
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: -80px;
+}
+
+.slider1 {
+    width: 1200px;
+    padding: 10px;
+    
+    display: flex;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: -40px;
+    margin-top: -90px;
+
+    
+}
+
+.images1 {
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    transition: all 0.5s;
+    
+}
+
+.images1 img{
+    width: 100%;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px black;
+}
+
+.buttons1 {
+    position: absolute;
+    display: flex;
+    top: 70%;
+    margin-top: 90px;
+    
+}
+
+
+
+.buttons1 input {
+    margin: 2px;
+    cursor: pointer;
+    
+    
+}
+
+/*Navbar */
+
 
 .navbar {
-    background-color: rgb(22, 7, 36);
+    background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
     line-height: 5rem;
 }
 
-.left h1 {
-    font-size: 2.5rem;
-    cursor: pointer;
+.heading{
+    color: white;
+    margin-left: 125px;
+    margin-top: 37px;
+    font-size: 3rem ;
 }
 
 .checkBtn {
@@ -50,15 +122,52 @@
     cursor: pointer;
     text-decoration: none;
     transition: all 1s;
+    margin-left: 20px;
 }
 
 .right ul li a:hover {
-    background-color: #fff;
+    background-color: red;
     border-radius: 7px;
-    color: rgb(22, 7, 36);
+    color: white;
 }
 
-@media screen and (max-width:805px) {
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  /* belownav section */
+
+  #mainhead{
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-left: -150px;
+}
+.heading-container{
+    display: flex; 
+    gap: 10px;
+    margin-left: 600px;
+    margin-top: 50px;
+    font-size: 2rem;
+    
+}
+
+
+.moto2{
+    color: red;
+    
+}
+.moto1{
+    color: white;
+}
+
+.mainpagecontent{
+    font-size: 30px;
+    margin-top: 70px;
+    margin-left: 536px;
+}
+
+  @media screen and (max-width:805px) {
     .list {
         width: 100%;
         height: 100vh;
